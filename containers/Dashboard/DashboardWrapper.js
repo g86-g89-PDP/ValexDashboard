@@ -91,10 +91,6 @@ const DashboardWrapper = styled.div`
       border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 1000;
     }
-
-    .content {
-      padding: 20px;
-    }
   }
 `;
 

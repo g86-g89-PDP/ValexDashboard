@@ -80,7 +80,7 @@ const Dashboard = ({ children, menu }) => {
             variant="contained"
             disableElevation
           >
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon className="text-white" icon={faBars} />
           </div>
         </header>
         <div className="content">{children}</div>

@@ -55,8 +55,7 @@ const DashboardWrapper = styled.div`
             display: block !important;
             padding: 10px 20px !important;
             border-radius: 6px !important;
-            background-color: rgba(255, 255, 255, 0.3) !important;
-            color: #3f3f3f !important;
+            color: #d9dfe6 !important;
             margin-bottom: 10px !important;
             transition: 0.3s !important;
             min-width: 200px !important;
@@ -71,7 +70,7 @@ const DashboardWrapper = styled.div`
               backdrop-filter: blur(1.5px);
               -webkit-backdrop-filter: blur(1.5px);
               border: 1px solid rgba(255, 255, 255, 0.18);
-              color: #111 !important;
+              color: #fff !important;
             }
           }
         }
@@ -79,10 +78,11 @@ const DashboardWrapper = styled.div`
     }
   }
   .rightside {
-    background: #ffffff;
+    background-color: #141b2d !important;
     flex: 1;
     position: relative;
     header {
+      background: #1f2940 !important;
       padding: 10px;
       position: sticky;
       top: 0;

@@ -38,9 +38,6 @@ const DashboardWrapper = styled.div`
       transition: 0.3s;
       color: #111;
       border: 1px solid rgba(255, 255, 255, 0.8);
-      position: absolute;
-      top: 30px;
-      left: 250px;
 
       &:hover {
         background: rgba(187, 187, 187, 0.4);
@@ -90,6 +87,25 @@ const DashboardWrapper = styled.div`
       -webkit-backdrop-filter: blur(4px);
       border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 1000;
+
+      input {
+        background-color: none !important;
+        border-radius: 30px;
+        border-outside: none;
+        border: none;
+        box-shadow: none;
+      }
+
+      .img-user {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .icons {
+        cursor: pointer;
+      }
     }
   }
 `;

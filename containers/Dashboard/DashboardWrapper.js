@@ -91,33 +91,8 @@ const DashboardWrapper = styled.div`
       -webkit-backdrop-filter: blur(4px);
       border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 1000;
-      .search,
-      .others {
-        width: 40px;
-        height: 40px;
-        padding-top: 8px;
-        border-radius: 100%;
-        text-align: center;
-        color: #111;
-        &:hover {
-          background-color: rgba(177, 175, 175, 0.171);
-          cursor: pointer;
-        }
-      }
-      .user img {
-        width: 45px;
-        height: 45px;
-        border-radius: 100%;
-        margin-left: 25px;
-      }
     }
-    .md-title {
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: 0.005em;
-      line-height: 26px;
-    }
+
     .content {
       padding: 20px;
     }

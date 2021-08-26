@@ -20,7 +20,7 @@ const DashboardWrapper = styled.div`
       padding: 20px;
     }
     &.show {
-      width: 300px;
+      width: 250px;
       padding: 20px;
     }
     h2 {
@@ -60,21 +60,20 @@ const DashboardWrapper = styled.div`
             transition: 0.3s !important;
             min-width: 200px !important;
             overflow: hidden !important;
-            &:hover {
-              background-color: rgba(255, 255, 255, 0.5) !important;
-            }
           }
-          &.active {
+          &.active:hover {
             .MuiButtonBase-root {
-              background-color: rgba(7, 0, 255, 0.3) !important;
-              backdrop-filter: blur(1.5px);
-              -webkit-backdrop-filter: blur(1.5px);
-              border: 1px solid rgba(255, 255, 255, 0.18);
-              color: #fff !important;
+              color: blue !important;
             }
           }
         }
       }
+    }
+    .user {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      border: 2px solid #0caadf !important;
     }
   }
   .rightside {

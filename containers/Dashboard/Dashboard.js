@@ -54,7 +54,15 @@ const Dashboard = ({ children, menu }) => {
           />
         </div>
         <hr className="text-light" />
-        <div></div>
+        <div className="text-center">
+          <img
+            src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg"
+            alt=""
+            className="mb-2 user"
+          />
+          <h5 className="text-white mb-0">Petey Cruiser</h5>
+          <span className="text-muted">Premium Member</span>
+        </div>
         <List className="mt-5" component="nav">
           {menus.map((v, i) => (
             <li key={v.to}>

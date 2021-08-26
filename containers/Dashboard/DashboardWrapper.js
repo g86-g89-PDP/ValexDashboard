@@ -3,11 +3,11 @@ import styled from "styled-components";
 const DashboardWrapper = styled.div`
   display: flex;
   .sidebar {
-    border-right: 2px solid #f184fd !important;
+    border-right: 2px solid #333c51 !important;
     flex-shrink: 0;
     width: 50px;
     overflow: hidden;
-    background: #1f2940;
+    background: #1f2940 !important;
     transition: 0.3s;
     height: 100vh;
     position: sticky;

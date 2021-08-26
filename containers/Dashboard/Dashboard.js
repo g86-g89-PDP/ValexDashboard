@@ -1,6 +1,5 @@
 import { faShopify } from "@fortawesome/free-brands-svg-icons";
 import {
-  faBahai,
   faBars,
   faCreditCard,
   faHome,
@@ -48,12 +47,13 @@ const Dashboard = ({ children, menu }) => {
   return (
     <DashboardWrapper>
       <div className={`sidebar ${(show && "show") || ""}`}>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-center align-items-center">
           <img
             src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/brand/logo-white.png"
             alt="not photo"
           />
         </div>
+        <hr className="text-light" />
         <div></div>
         <List className="mt-5" component="nav">
           {menus.map((v, i) => (

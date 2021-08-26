@@ -1,12 +1,12 @@
+import { faShopify } from "@fortawesome/free-brands-svg-icons";
 import {
   faBahai,
+  faBars,
   faCreditCard,
   faHome,
-  faImages,
-  faNewspaper,
-  faTasks,
-  faUsers,
-  faVideo,
+  faMailBulk,
+  faShoppingBasket,
+  faTable,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, List, ListItem } from "@material-ui/core";
@@ -18,21 +18,25 @@ import DashboardWrapper from "./DashboardWrapper";
 
 const menus = [
   { id: "index", to: "/", title: "Index", icon: faHome },
-  { id: "icons", to: "/icons", title: "Icons", icon: faUsers },
-  { id: "products", to: "/products", title: "Products", icon: faTasks },
+  {
+    id: "products",
+    to: "/products",
+    title: "Products",
+    icon: faShoppingBasket,
+  },
   {
     id: "productDetails",
     to: "/productDetails",
     title: "Product-Details",
-    icon: faVideo,
+    icon: faShopify,
   },
-  { id: "cart", to: "/cart", title: "Cart", icon: faImages },
-  { id: "mail", to: "/mail", title: "Mail", icon: faNewspaper },
+  { id: "card", to: "/card", title: "Card", icon: faCreditCard },
+  { id: "mail", to: "/mail", title: "Mail", icon: faMailBulk },
   {
     id: "basicTables",
     to: "/basicTables",
     title: "Basic Tables",
-    icon: faCreditCard,
+    icon: faTable,
   },
 ];
 
@@ -76,7 +80,7 @@ const Dashboard = ({ children, menu }) => {
             variant="contained"
             disableElevation
           >
-            <FontAwesomeIcon icon={faBahai} />
+            <FontAwesomeIcon icon={faBars} />
           </div>
         </header>
         <div className="content">{children}</div>

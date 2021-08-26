@@ -7,7 +7,7 @@ const DashboardWrapper = styled.div`
     flex-shrink: 0;
     width: 50px;
     overflow: hidden;
-    background: #ffffff;
+    background: #1f2940;
     transition: 0.3s;
     height: 100vh;
     position: sticky;

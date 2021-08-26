@@ -5,7 +5,6 @@ import {
   faImages,
   faNewspaper,
   faTasks,
-  faUserFriends,
   faUsers,
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";

@@ -16,11 +16,13 @@ export const IndexWrapper = styled.div`
         color: white;
         padding: 20px 15px;
 
-        
+     .header2{
+         display:none;
+     }   
     }
     .cards {
-       position: relative;
-       width: 230px;
+       
+       max-width: 230px;
        padding: 10px 10px 20px 10px;
       
        .titleCard {

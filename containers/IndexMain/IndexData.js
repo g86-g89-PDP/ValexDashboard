@@ -34,3 +34,35 @@ export const IndexData = [
         bgcolor: "#F38745"
     },
 ]
+export const datas = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    datasets: [
+        {
+            label: 'Success',
+            data: [65, 85, 101, 65, 42, 83, 35, 57, 25, 54],
+            backgroundColor: '#0269E8',
+        },
+        {
+            label: 'Pending',
+            data: [45, 35, 57, 25, 11, 54, 35, 41, 45, 32,],
+            backgroundColor: '#F85D77',
+        },
+        {
+            label: 'Failed',
+            data: [28, 35, 41, 45, 32, 30, 65, 85, 101, 65],
+            backgroundColor: '#F38745',
+        },
+    ],
+};
+
+export const options = {
+    scales: {
+        yAxes: [
+            {
+                ticks: {
+                    beginAtZero: true,
+                },
+            },
+        ],
+    },
+};

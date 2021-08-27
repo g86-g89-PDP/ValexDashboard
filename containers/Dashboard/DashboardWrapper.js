@@ -78,6 +78,7 @@ const DashboardWrapper = styled.div`
     flex: 1;
     position: relative;
     header {
+      position: sticky;
       background: #1f2940 !important;
       padding: 10px;
       position: sticky;

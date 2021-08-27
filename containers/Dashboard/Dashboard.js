@@ -10,11 +10,18 @@ import {
   faTable,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Badge, Link, List, ListItem, makeStyles } from "@material-ui/core";
+import {
+  Badge,
+  Link,
+  List,
+  ListItem,
+  makeStyles,
+  TextField,
+} from "@material-ui/core";
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMenu } from "../../redux/type";
+import { toggleMenu } from "../../redux/actions";
 import DashboardWrapper from "./DashboardWrapper";
 import { FiMaximize } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
@@ -55,17 +62,22 @@ const Dashboard = ({ children, menu }) => {
           <img
             src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/brand/logo-white.png"
             alt="not photo"
+            className="imgLogo"
           />
         </div>
-        <hr className="text-light" />
-        <div className="text-center">
-          <img
-            src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg"
-            alt=""
-            className="mb-2 user"
-          />
-          <h5 className="text-white mb-0">Petey Cruiser</h5>
-          <span className="text-muted">Premium Member</span>
+        <hr className="text-light mt-5" />
+        <div className="d-flex justify-content-center align-items-center">
+          <div className="div text-center">
+            <img
+              src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg"
+              alt=""
+              className="mb-2 user"
+            />
+          </div>
+          <div className={`title ${(show && "show") || ""}`}>
+            <h6 className="text-white mb-0">Petey Cruiser</h6>
+            <span className="text-muted">Premium Member</span>
+          </div>
         </div>
         <List className="mt-5" component="nav">
           {menus.map((v, i) => (
@@ -74,7 +86,7 @@ const Dashboard = ({ children, menu }) => {
                 <Link href={`${v.to}`}>
                   <a className={`${menu === v.id ? "active" : ""}`}>
                     <ListItem button>
-                      <FontAwesomeIcon icon={v.icon} className="me-2" />
+                      <FontAwesomeIcon icon={v.icon} className="me-3" />
                       {v.title}
                     </ListItem>
                   </a>
@@ -96,10 +108,17 @@ const Dashboard = ({ children, menu }) => {
               >
                 <RiMenu2Fill className="text-white fs-4" />
               </div>
+              {/* <TextField
+                id="outlined-password-input"
+                label="Password"
+                type="password"
+                autoComplete="current-password"
+                variant="outlined"
+                className="py-0"
+              /> */}
               <input
-                _ngcontent-ekf-c90
                 type="text"
-                className="form-control pe-5 bg-0 d-none d-md-block"
+                className="form-control ps-4 bg-0 d-none d-md-block"
                 placeholder="Search for anything..."
               />
               <button _ngcontent-ekf-c90 className="btn">

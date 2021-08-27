@@ -14,37 +14,32 @@ const DashboardWrapper = styled.div`
     top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    transition: 0.5s;
+    transition: 0.4s;
     &:hover {
-      width: 300px;
+      width: 250px;
       padding: 20px;
     }
     &.show {
       width: 220px;
       padding: 20px;
     }
-    h2 {
-      color: #00049d !important;
-      position: absolute;
-      top: 60px;
-      left: 100px;
-    }
-    .toggle {
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      border-radius: 100%;
-      text-align: center;
-      transition: 0.3s;
-      color: #111;
-      border: 1px solid rgba(255, 255, 255, 0.8);
 
-      &:hover {
-        background: rgba(187, 187, 187, 0.4);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-      }
+    .title {
+      position: absolute;
+      top: 156px;
+      left: 76px;
     }
+
+    span {
+      font-size: 13px;
+    }
+
+    .imgLogo {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+    }
+
     nav {
       li {
         a {
@@ -58,19 +53,26 @@ const DashboardWrapper = styled.div`
             min-width: 200px !important;
             overflow: hidden !important;
           }
-          &.active:hover {
+          &.active {
             .MuiButtonBase-root {
-              color: blue !important;
+              color: #2a7ef3 !important;
             }
           }
         }
       }
     }
-    .user {
-      width: 80px;
-      height: 80px;
+
+    .div {
+      width: 72px;
+      height: 72px;
       border-radius: 100%;
       border: 2px solid #0caadf !important;
+      .user {
+        width: 67px;
+        height: 67px;
+        border-radius: 100%;
+        border: 3px solid #1f2940 !important;
+      }
     }
   }
   .rightside {
@@ -89,8 +91,25 @@ const DashboardWrapper = styled.div`
       border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 1000;
 
+      .toggle {
+        cursor: pointer;
+        border-radius: 100%;
+        text-align: center;
+      }
+
+      ${
+        "" /* .MuiOutlinedInput-input {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        border-radius: 20px !important;
+      } */
+      }
+
       input {
-        background-color: none !important;
+        width: 290px;
+        border-color: #ffffff1a !important;
+        border: 1px solid #e2e8f51a !important;
+        background-color: #ffffff1a !important;
         border-radius: 30px;
        /* border-outline: 0; */
         border: none;

@@ -5,7 +5,7 @@ const DashboardWrapper = styled.div`
   .sidebar {
     border-right: 2px solid #333c51 !important;
     flex-shrink: 0;
-    width: 50px;
+    width: 60px;
     overflow: hidden;
     background: #1f2940 !important;
     transition: 0.3s;
@@ -23,28 +23,17 @@ const DashboardWrapper = styled.div`
       width: 250px;
       padding: 20px;
     }
-    h2 {
-      color: #00049d !important;
-      position: absolute;
-      top: 60px;
-      left: 100px;
-    }
-    .toggle {
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      border-radius: 100%;
-      text-align: center;
-      transition: 0.3s;
-      color: #111;
-      border: 1px solid rgba(255, 255, 255, 0.8);
 
-      &:hover {
-        background: rgba(187, 187, 187, 0.4);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-      }
+    span {
+      font-size: 13px;
     }
+
+    .imgLogo {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+    }
+
     nav {
       li {
         a {
@@ -67,8 +56,8 @@ const DashboardWrapper = styled.div`
       }
     }
     .user {
-      width: 80px;
-      height: 80px;
+      width: 65px;
+      height: 65px;
       border-radius: 100%;
       border: 2px solid #0caadf !important;
     }
@@ -88,6 +77,12 @@ const DashboardWrapper = styled.div`
       -webkit-backdrop-filter: blur(4px);
       border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 1000;
+
+      .toggle {
+        cursor: pointer;
+        border-radius: 100%;
+        text-align: center;
+      }
 
       input {
         background-color: none !important;

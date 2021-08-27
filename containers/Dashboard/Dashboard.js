@@ -14,7 +14,7 @@ import { Badge, Link, List, ListItem, makeStyles } from "@material-ui/core";
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMenu } from "../../redux/type";
+import { toggleMenu } from "../../redux/actions";
 import DashboardWrapper from "./DashboardWrapper";
 import { FiMaximize } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
@@ -55,19 +55,20 @@ const Dashboard = ({ children, menu }) => {
           <img
             src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/brand/logo-white.png"
             alt="not photo"
+            className="imgLogo"
           />
         </div>
-        <hr className="text-light" />
+        <hr className="text-light mt-5" />
         <div className="text-center">
           <img
             src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg"
             alt=""
             className="mb-2 user"
           />
-          <h5 className="text-white mb-0">Petey Cruiser</h5>
+          <h6 className="text-white mb-0">Petey Cruiser</h6>
           <span className="text-muted">Premium Member</span>
         </div>
-        <List className="mt-5" component="nav">
+        <List className="mt-3" component="nav">
           {menus.map((v, i) => (
             <li key={v.to}>
               <Slide delay={i * 30}>

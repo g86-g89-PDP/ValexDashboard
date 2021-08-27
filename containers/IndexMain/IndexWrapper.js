@@ -19,7 +19,21 @@ export const IndexWrapper = styled.div`
         
     }
     .cards {
-       
+       position: relative;
+       width: 230px;
+       padding: 10px 10px 20px 10px;
+      
+       .titleCard {
+           color: white;
+           font-size: 14px;
+           font-weight: bold;
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+       }
+        .iconCount {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+        }
     }
 
 }

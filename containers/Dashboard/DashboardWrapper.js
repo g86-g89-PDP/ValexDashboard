@@ -20,7 +20,7 @@ const DashboardWrapper = styled.div`
       padding: 20px;
     }
     &.show {
-      width: 300px;
+      width: 220px;
       padding: 20px;
     }
     h2 {
@@ -38,9 +38,6 @@ const DashboardWrapper = styled.div`
       transition: 0.3s;
       color: #111;
       border: 1px solid rgba(255, 255, 255, 0.8);
-      position: absolute;
-      top: 30px;
-      left: 250px;
 
       &:hover {
         background: rgba(187, 187, 187, 0.4);
@@ -55,34 +52,33 @@ const DashboardWrapper = styled.div`
             display: block !important;
             padding: 10px 20px !important;
             border-radius: 6px !important;
-            background-color: rgba(255, 255, 255, 0.3) !important;
-            color: #3f3f3f !important;
+            color: #d9dfe6 !important;
             margin-bottom: 10px !important;
             transition: 0.3s !important;
             min-width: 200px !important;
             overflow: hidden !important;
-            &:hover {
-              background-color: rgba(255, 255, 255, 0.5) !important;
-            }
           }
-          &.active {
+          &.active:hover {
             .MuiButtonBase-root {
-              background-color: rgba(7, 0, 255, 0.3) !important;
-              backdrop-filter: blur(1.5px);
-              -webkit-backdrop-filter: blur(1.5px);
-              border: 1px solid rgba(255, 255, 255, 0.18);
-              color: #111 !important;
+              color: blue !important;
             }
           }
         }
       }
     }
+    .user {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      border: 2px solid #0caadf !important;
+    }
   }
   .rightside {
-    background: #ffffff;
+    background-color: #141b2d !important;
     flex: 1;
     position: relative;
     header {
+      background: #1f2940 !important;
       padding: 10px;
       position: sticky;
       top: 0;
@@ -91,10 +87,25 @@ const DashboardWrapper = styled.div`
       -webkit-backdrop-filter: blur(4px);
       border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 1000;
-    }
 
-    .content {
-      padding: 0;
+      input {
+        background-color: none !important;
+        border-radius: 30px;
+       /* border-outline: 0; */
+        border: none;
+        box-shadow: none;
+      }
+
+      .img-user {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .icons {
+        cursor: pointer;
+      }
     }
   }
 `;

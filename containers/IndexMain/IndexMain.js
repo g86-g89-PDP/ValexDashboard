@@ -1,88 +1,47 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faArrowCircleUp, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+// import Chart from 'react-google-charts'
+import { IndexData } from './IndexData'
 import { IndexWrapper } from './IndexWrapper'
+import { Bar } from 'react-chartjs-2';
 
 
-export class ApexChart extends React.Component {
-    constructor(props) {
-        super(props);
 
-        this.state = {
+const data = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    datasets: [
+        {
+            label: 'Success',
+            data: [65, 85, 101, 65, 42, 83, 35, 57, 25, 54],
+            backgroundColor: '#0269E8',
+        },
+        {
+            label: 'Pending',
+            data: [45, 35, 57, 25, 11, 54, 35, 41, 45, 32,],
+            backgroundColor: '#F85D77',
+        },
+        {
+            label: 'Failed',
+            data: [28, 35, 41, 45, 32, 30, 65, 85, 101, 65],
+            backgroundColor: '#F38745',
+        },
+    ],
+};
 
-            series: [
-                {
-                    name: 'South',
-                    data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
-                        min: 10,
-                        max: 60
-                    })
-                },
-                {
-                    name: 'North',
-                    data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
-                        min: 10,
-                        max: 20
-                    })
-                },
-                {
-                    name: 'Central',
-                    data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
-                        min: 10,
-                        max: 15
-                    })
-                }
-            ],
-            options: {
-                chart: {
-                    type: 'area',
-                    height: 350,
-                    stacked: true,
-                    events: {
-                        selection: function (chart, e) {
-                            console.log(new Date(e.xaxis.min))
-                        }
-                    },
-                },
-                colors: ['#008FFB', '#00E396', '#CED4DC'],
-                dataLabels: {
-                    enabled: false
-                },
-                stroke: {
-                    curve: 'smooth'
-                },
-                fill: {
-                    type: 'gradient',
-                    gradient: {
-                        opacityFrom: 0.6,
-                        opacityTo: 0.8,
-                    }
-                },
-                legend: {
-                    position: 'top',
-                    horizontalAlign: 'left'
-                },
-                xaxis: {
-                    type: 'datetime'
+const options = {
+    scales: {
+        yAxes: [
+            {
+                ticks: {
+                    beginAtZero: true,
                 },
             },
+        ],
+    },
+};
 
 
-        };
-    }
-
-
-
-    // render() {
-    //     return (
-
-
-
-
-
-    //     );
-    // }
-}
 
 const IndexMain = () => {
 
@@ -119,22 +78,37 @@ const IndexMain = () => {
 
                     </div>
                     <div className="container-fluid mainPage">
-                        <div className="row p-3">
-                            <div className="col-sm-5 col-md-4 col-lg-3 shadow bg-primary p-2 rounded">
-                                <div className="cards">
-                                    <p className="titleCard">TODAY ORDERS</p>
-                                    <div className="d-flex flex-column">
-                                        <span className="fw-bold text-light" >$5,74.12  </span>
-                                        <span className="smallText">Compared to last week</span>
-                                    </div>
-                                    <div className="d-flex">
-                                        <div className="child1">
-                                            <div id="chart">
-                                                <ApexChart options={this.state.options} series={this.state.series} type="area" height={350} />
-                                            </div>
+                        <div className="row ">
+                            {IndexData.map((v, i) => (
+                                <div key={i} className="col-sm-5 col-md-4 col-lg-3   mb-3">
+                                    <div style={{ background: `${v.bgcolor}` }} className="cards shadow rounded ">
+                                        <p className="titleCard">{v.title}</p>
+                                        <div className="d-flex flex-column">
+                                            <span className="fw-bold text-light" >${v.count}</span>
+                                            <span className="smallText">Compared to last week</span>
+                                        </div>
+                                        <div className="iconCount">
+                                            <FontAwesomeIcon color="white" className="bg-dark rounded-pill" icon={v.icon} />
+                                            <span className="smallText fw-bold"> {v.rate} </span>
                                         </div>
                                     </div>
+
                                 </div>
+                            ))}
+                        </div>
+                        <div className="row py-5 text-light">
+                            <div className="col-sm-9 col-md-8">
+                                <div className="trade_chart">
+                                    <div style={{ maxWidth: " 500px" }}>
+                                        <p className="py-0">ORDER STATUS</p>
+                                        <span className="smallText">
+                                            Order Status and Tracking. Track your order from ship date to arrival. To begin, enter your order number.
+                                        </span>
+                                        <Bar data={data} options={options} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-6 col-md-4">
 
                             </div>
                         </div>

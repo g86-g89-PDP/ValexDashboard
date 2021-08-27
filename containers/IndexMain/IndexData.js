@@ -66,3 +66,48 @@ export const options = {
         ],
     },
 };
+
+export const usersData = [
+    {
+        user: "https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/3.jpg",
+        name: "Samantha Melon",
+        state: "Paid",
+        stateColor: 'green',
+        botom: "1px solid #69707F"
+    },
+    {
+        user: "https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/11.jpg",
+        name: "Jimmy Changa",
+        state: "Pending",
+        stateColor: 'red',
+        botom: "1px solid #69707F"
+    },
+    {
+        user: "https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/17.jpg",
+        name: "Gabe Lackmen",
+        state: "Pending",
+        stateColor: 'red',
+        botom: "1px solid #69707F"
+    },
+    {
+        user: "https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/15.jpg",
+        name: "Manuel Labor",
+        state: "Paid",
+        stateColor: 'green',
+        botom: "1px solid #69707F"
+    },
+    {
+        user: "https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/7.jpg",
+        name: "Sharon Needles",
+        state: "Paid",
+        stateColor: 'green',
+        botom: "1px solid #69707F"
+    },
+    {
+        user: "https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg",
+        name: "Petey Cruiser",
+        state: "Paid",
+        stateColor: 'green',
+        botom: '',
+    },
+]

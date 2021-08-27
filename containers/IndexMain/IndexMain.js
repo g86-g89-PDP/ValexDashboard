@@ -1,18 +1,18 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import Maps from '../../public/images/maps.png'
-import { IndexData } from './IndexData'
+import { IndexData, usersData } from './IndexData'
 import { IndexWrapper } from './IndexWrapper'
 import { Bar } from 'react-chartjs-2';
 import { datas, options } from './IndexData'
+import { Avatar, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@material-ui/core'
+
 
 
 
 
 
 const IndexMain = () => {
-
     return (
         <>
             <IndexWrapper className="main-container">
@@ -65,7 +65,7 @@ const IndexMain = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="row text-sm-center py-5 text-light">
+                        <div className="row align-items-center py-5 text-light">
                             <div className="col-sm-10 col-md-7 mb-2">
                                 <div className="trade_chart">
                                     <div style={{ maxWidth: " 500px" }}>
@@ -84,6 +84,36 @@ const IndexMain = () => {
                                 </span>
                                 <div style={{ maxWidth: " 350px" }}>
                                     <img className="w-100" src='/images/maps.png' alt="Chart bor kartaniki" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-10 col-md-4">
+                                <div className="text-light" style={{ backgroundColor: "#1F2940", padding: "20px 0" }}>
+                                    <div className="px-3">
+                                        <p className="my-0 ">RECENT CUSTOMERS</p>
+                                        <span className="smallText ">
+                                            A customer is an individual or business that purchases the goods service has evolved to include real-time
+                                        </span>
+                                    </div>
+                                    <List >
+                                        {usersData?.map((v, i) => (
+                                            <ListItem style={{ borderBottom: `${v.botom}` }} button key={i}>
+                                                <ListItemAvatar>
+                                                    <Avatar src={`${v.user}`} alt="" />
+                                                </ListItemAvatar>
+                                                <ListItemText
+                                                    primary={v.name}
+                                                    secondary={
+                                                        <Typography style={{ color: "silver", fontSize: "11px" }}> User ID: #1234
+                                                            <span className="smallText " style={{ color: `${v.stateColor}` }}>  {v.state}</span>
+                                                        </Typography>
+                                                    } />
+                                            </ListItem>
+                                        ))}
+                                    </List>
                                 </div>
                             </div>
                         </div>

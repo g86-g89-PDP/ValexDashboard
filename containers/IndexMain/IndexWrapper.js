@@ -7,7 +7,7 @@ export const IndexWrapper = styled.div`
     background-color: #141B2D;
 
     .smallText{
-            font-size: 13px;
+            font-size: 12px;
             color: silver;
         }
     .header {

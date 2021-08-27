@@ -5,7 +5,7 @@ const DashboardWrapper = styled.div`
   .sidebar {
     border-right: 2px solid #333c51 !important;
     flex-shrink: 0;
-    width: 60px;
+    width: 50px;
     overflow: hidden;
     background: #1f2940 !important;
     transition: 0.3s;
@@ -14,14 +14,20 @@ const DashboardWrapper = styled.div`
     top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    transition: 0.5s;
+    transition: 0.4s;
     &:hover {
-      width: 300px;
+      width: 250px;
       padding: 20px;
     }
     &.show {
       width: 250px;
       padding: 20px;
+    }
+
+    .title {
+      position: absolute;
+      top: 156px;
+      left: 76px;
     }
 
     span {
@@ -47,19 +53,26 @@ const DashboardWrapper = styled.div`
             min-width: 200px !important;
             overflow: hidden !important;
           }
-          &.active:hover {
+          &.active {
             .MuiButtonBase-root {
-              color: blue !important;
+              color: #2a7ef3 !important;
             }
           }
         }
       }
     }
-    .user {
-      width: 65px;
-      height: 65px;
+
+    .div {
+      width: 72px;
+      height: 72px;
       border-radius: 100%;
       border: 2px solid #0caadf !important;
+      .user {
+        width: 67px;
+        height: 67px;
+        border-radius: 100%;
+        border: 3px solid #1f2940 !important;
+      }
     }
   }
   .rightside {
@@ -84,8 +97,19 @@ const DashboardWrapper = styled.div`
         text-align: center;
       }
 
+      ${
+        "" /* .MuiOutlinedInput-input {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        border-radius: 20px !important;
+      } */
+      }
+
       input {
-        background-color: none !important;
+        width: 290px;
+        border-color: #ffffff1a !important;
+        border: 1px solid #e2e8f51a !important;
+        background-color: #ffffff1a !important;
         border-radius: 30px;
         border-outside: none;
         border: none;

@@ -7,11 +7,6 @@ import { Bar } from 'react-chartjs-2';
 import { datas, options } from './IndexData'
 import { Avatar, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@material-ui/core'
 
-
-
-
-
-
 const IndexMain = () => {
     return (
         <>

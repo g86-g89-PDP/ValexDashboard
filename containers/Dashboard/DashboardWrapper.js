@@ -20,14 +20,14 @@ const DashboardWrapper = styled.div`
       padding: 20px;
     }
     &.show {
-      width: 220px;
+      width: 250px;
       padding: 20px;
     }
 
     .title {
       position: absolute;
       top: 156px;
-      left: 65px;
+      left: 77px;
     }
 
     span {

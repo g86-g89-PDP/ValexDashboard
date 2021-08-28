@@ -13,7 +13,7 @@ const ProductCards = () => {
       <div class="row  bgg text-dark row-cols-1 row-cols-md-3 g-4">
         <div class="col ">
           <div class="card p-4 h-100">
-            <img src="./img/01.jpg" alt="loading..." />
+            <img src="/img/01.jpg" alt="loading..." />
             <div class="d-flex">
               <div class="card-body">
                 <p class="card-text">Items </p>
@@ -48,7 +48,7 @@ const ProductCards = () => {
         </div>
         <div class="col">
           <div class="card  p-4 h-100">
-            <img src="./img/04.jpg" class="card-img-top" alt="..."></img>
+            <img src="/img/04.jpg" class="card-img-top" alt="..."></img>
             <div class="d-flex">
               <div class="card-body">
                 <p class="card-text">Items </p>
@@ -82,7 +82,7 @@ const ProductCards = () => {
         </div>
         <div class="col">
           <div class="card p-4 pb-4 h-100">
-            <img src="./img/07.jpg" class="card-img-top " alt="..."></img>
+            <img src="/img/07.jpg" class="card-img-top " alt="..."></img>
             <div class="d-flex">
               <div class="card-body">
                 <p class="card-text">Items </p>

@@ -4,7 +4,7 @@ import React from "react";
 
 const ProductDetailis = () => {
   return (
-    <Dashboard menu="productdetails">
+    <Dashboard menu="/productDetails">
       <ProductDetailes />
     </Dashboard>
   );

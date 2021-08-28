@@ -35,9 +35,9 @@ const Mail = () => {
                 <RiRestartLine />
               </button>
             </div>
-            <div class="dropdown">
+            <div className="dropdown">
               <button
-                class="btn btn-primary dropdown-toggle"
+                className="btn btn-primary dropdown-toggle"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
@@ -45,19 +45,22 @@ const Mail = () => {
               >
                 Dropdown button
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="dropdownMenuButton1"
+              >
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
@@ -109,7 +112,7 @@ const Mail = () => {
               <div className="inpi">
                 <div>
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"
@@ -128,7 +131,7 @@ const Mail = () => {
                   <div className="mishka">
                     <div>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckDefault"
@@ -173,7 +176,7 @@ const Mail = () => {
                   <div className="mishka">
                     <div>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckDefault"
@@ -215,7 +218,7 @@ const Mail = () => {
                   <div className="mishka">
                     <div>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckDefault"
@@ -260,7 +263,7 @@ const Mail = () => {
                   <div className="mishka">
                     <div>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckDefault"

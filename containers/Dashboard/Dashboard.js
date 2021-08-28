@@ -132,10 +132,10 @@ const Dashboard = ({ children, menu }) => {
                   icon={faEnvelope}
                 />
               </Badge>
-              <Badge className="me-3">
+              <Badge badgeContent={1} color="error" className="me-3">
                 <FontAwesomeIcon icon={faBell} className="text-white icons" />
               </Badge>
-              <Badge badgeContent={1} color="error" className="me-3">
+              <Badge className="me-3">
                 <FiMaximize className="text-white icons" />
               </Badge>
               <img

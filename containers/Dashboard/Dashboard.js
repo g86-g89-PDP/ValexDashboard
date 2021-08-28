@@ -23,7 +23,7 @@ import Panel from "./Panel";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 const menus = [
-  { id: "index", to: "/", title: "Index", icon: faHome },
+  { id: "index", to: "/index", title: "Index", icon: faHome },
   {
     id: "products",
     to: "/ecommerce/products",
@@ -32,7 +32,7 @@ const menus = [
   },
   {
     id: "productDetails",
-    to: "/productDetails",
+    to: "/ecommerce/productdetails",
     title: "Product-Details",
     icon: faShopify,
   },
@@ -40,7 +40,7 @@ const menus = [
   { id: "mail", to: "/mail/mail", title: "Mail", icon: faMailBulk },
   {
     id: "basicTables",
-    to: "/basicTables",
+    to: "/basictables",
     title: "Basic Tables",
     icon: faTable,
   },
@@ -66,7 +66,7 @@ const Dashboard = ({ children, menu }) => {
           <div className="div text-center">
             <img
               src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg"
-              alt=""
+              alt="avatar"
               className="mb-2 user"
             />
           </div>

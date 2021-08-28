@@ -11,11 +11,11 @@ import ProductsWrapper from "./ProductsWrapper";
 const Products = () => {
   return (
     <ProductsWrapper>
-      <div className="m-1">
+      <div className="productmains">
         <div>
-          <div>
-            <p>Ecommerce</p>
-            <p> / Products</p>
+          <div className="d-flex texts">
+            <p className="text">Ecommerce</p>
+            <p className="smiletext"> / Products</p>
           </div>
           <div></div>
         </div>

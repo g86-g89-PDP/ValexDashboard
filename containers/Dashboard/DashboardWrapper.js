@@ -5,7 +5,7 @@ const DashboardWrapper = styled.div`
   .sidebar {
     border-right: 2px solid #333c51 !important;
     flex-shrink: 0;
-    width: 50px;
+    width: 58px;
     overflow: hidden;
     background: #1f2940 !important;
     transition: 0.3s;
@@ -27,7 +27,7 @@ const DashboardWrapper = styled.div`
     .title {
       position: absolute;
       top: 156px;
-      left: 76px;
+      left: 65px;
     }
 
     span {
@@ -37,7 +37,7 @@ const DashboardWrapper = styled.div`
     .imgLogo {
       position: absolute;
       top: 10px;
-      left: 50px;
+      left: 54px;
     }
 
     nav {
@@ -96,13 +96,6 @@ const DashboardWrapper = styled.div`
         border-radius: 100%;
         text-align: center;
       }
-
-      ${
-        "" /* .MuiOutlinedInput-input {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-        border-radius: 20px !important;
-      } */
       }
 
       input {
@@ -120,7 +113,7 @@ const DashboardWrapper = styled.div`
         border-radius: 100%;
         width: 40px;
         height: 40px;
-        margin-right: 15px;
+        margin-right: 8px;
       }
 
       .icons {

@@ -1,11 +1,13 @@
-import React from 'react'
+import Mail from "../../containers/Mail/mail";
+import Dashboard from "../../containers/Dashboard";
 
-const mail = () => {
-    return (
-        <div>
-            <h1>Hello</h1>
-        </div>
-    )
+
+export default function mail() {
+  return (
+    <div>
+     <Dashboard menu="/mail">
+        <Mail />
+      </Dashboard>
+    </div>
+  );
 }
-
-export default mail

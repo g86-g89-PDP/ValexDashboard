@@ -10,14 +10,8 @@ import {
   faTable,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  Badge,
-  Link,
-  List,
-  ListItem,
-  makeStyles,
-  TextField,
-} from "@material-ui/core";
+import { Badge, List, ListItem } from "@material-ui/core";
+import Link from "next/link";
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,6 +19,8 @@ import { toggleMenu } from "../../redux/actions";
 import DashboardWrapper from "./DashboardWrapper";
 import { FiMaximize } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
+import Panel from "./Panel";
+import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 const menus = [
   { id: "index", to: "/", title: "Index", icon: faHome },
@@ -41,7 +37,7 @@ const menus = [
     icon: faShopify,
   },
   { id: "card", to: "/card", title: "Card", icon: faCreditCard },
-  { id: "mail", to: "/mail", title: "Mail", icon: faMailBulk },
+  { id: "mail", to: "/mail/mail", title: "Mail", icon: faMailBulk },
   {
     id: "basicTables",
     to: "/basicTables",
@@ -86,7 +82,7 @@ const Dashboard = ({ children, menu }) => {
                 <Link href={`${v.to}`}>
                   <a className={`${menu === v.id ? "active" : ""}`}>
                     <ListItem button>
-                      <FontAwesomeIcon icon={v.icon} className="me-3" />
+                      <FontAwesomeIcon icon={v.icon} className="me-4" />
                       {v.title}
                     </ListItem>
                   </a>
@@ -108,14 +104,7 @@ const Dashboard = ({ children, menu }) => {
               >
                 <RiMenu2Fill className="text-white fs-4" />
               </div>
-              {/* <TextField
-                id="outlined-password-input"
-                label="Password"
-                type="password"
-                autoComplete="current-password"
-                variant="outlined"
-                className="py-0"
-              /> */}
+
               <input
                 type="text"
                 className="form-control ps-4 bg-0 d-none d-md-block"
@@ -129,7 +118,7 @@ const Dashboard = ({ children, menu }) => {
                 />
               </button>
             </div>
-            <div>
+            <div className="d-flex justify-content-center align-items-center">
               <Badge badgeContent={4} color="secondary" className="me-4">
                 <FontAwesomeIcon
                   color="white"
@@ -137,10 +126,10 @@ const Dashboard = ({ children, menu }) => {
                   icon={faEnvelope}
                 />
               </Badge>
-              <Badge className="me-3">
-                <FiMaximize className="text-white icons" />
-              </Badge>
               <Badge badgeContent={1} color="error" className="me-3">
+                <FontAwesomeIcon icon={faBell} className="text-white icons" />
+              </Badge>
+              <Badge className="me-3">
                 <FiMaximize className="text-white icons" />
               </Badge>
               <img
@@ -148,16 +137,13 @@ const Dashboard = ({ children, menu }) => {
                 className="img-user"
                 alt=""
               />
-              <FontAwesomeIcon
-                className="text-white me-4 icons"
-                icon={faBars}
-              />
+              <div>
+                <Panel />
+              </div>
             </div>
           </div>
         </header>
-        <div className="content ">
-          {children}
-        </div>
+        <div className="content ">{children}</div>
       </div>
     </DashboardWrapper>
   );

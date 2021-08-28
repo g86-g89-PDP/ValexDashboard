@@ -23,7 +23,7 @@ import Panel from "./Panel";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 const menus = [
-  { id: "index", to: "/", title: "Index", icon: faHome },
+  { id: "index", to: "/index", title: "Index", icon: faHome },
   {
     id: "products",
     to: "/products",
@@ -32,7 +32,7 @@ const menus = [
   },
   {
     id: "productDetails",
-    to: "/productDetails",
+    to: "/productdetails",
     title: "Product-Details",
     icon: faShopify,
   },
@@ -40,7 +40,7 @@ const menus = [
   { id: "mail", to: "/mail/mail", title: "Mail", icon: faMailBulk },
   {
     id: "basicTables",
-    to: "/basicTables",
+    to: "/basictables",
     title: "Basic Tables",
     icon: faTable,
   },

@@ -1,5 +1,8 @@
 import "../styles/globals.css";
 import Head from "next/head";
+import { Provider } from "react-redux";
+import store from "../redux/store";
+import GlobalStyle from "../styles/globalStyle";
 function MyApp({ Component, pageProps }) {
   return (
     <>

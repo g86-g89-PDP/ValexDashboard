@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAccessibleIcon, faSafari } from "@fortawesome/free-brands-svg-icons";
 import { faCalendar, faPills } from "@fortawesome/free-solid-svg-icons";
 
-const card = () => {
+const ProductCards = () => {
   return (
     <div className="container mt-4 ">
       <div class="row  bgg text-dark row-cols-1 row-cols-md-3 g-4">
@@ -159,4 +159,4 @@ const card = () => {
   );
 };
 
-export default card;
+export default ProductCards;

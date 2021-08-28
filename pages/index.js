@@ -1,8 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import ProductDetailes from "./ecommerce/productDetailes"
-import Card from "./ecommerce/card";
+
+import ProductDetailes from "../containers/Ecomerce/ProductDetailes"
+import Card from "../containers/Ecomerce/ProductCards";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {

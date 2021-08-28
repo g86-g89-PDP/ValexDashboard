@@ -32,7 +32,7 @@ const menus = [
   },
   {
     id: "productDetails",
-    to: "/productDetails",
+    to: "/ecommerce/product-details",
     title: "Product-Details",
     icon: faShopify,
   },

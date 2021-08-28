@@ -25,6 +25,7 @@ import { toggleMenu } from "../../redux/actions";
 import DashboardWrapper from "./DashboardWrapper";
 import { FiMaximize } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
+import Panel from "./Panel";
 
 const menus = [
   { id: "index", to: "/", title: "Index", icon: faHome },
@@ -108,14 +109,7 @@ const Dashboard = ({ children, menu }) => {
               >
                 <RiMenu2Fill className="text-white fs-4" />
               </div>
-              {/* <TextField
-                id="outlined-password-input"
-                label="Password"
-                type="password"
-                autoComplete="current-password"
-                variant="outlined"
-                className="py-0"
-              /> */}
+
               <input
                 type="text"
                 className="form-control ps-4 bg-0 d-none d-md-block"
@@ -148,10 +142,12 @@ const Dashboard = ({ children, menu }) => {
                 className="img-user"
                 alt=""
               />
+
               <FontAwesomeIcon
                 className="text-white me-4 icons"
                 icon={faBars}
               />
+              <Panel />
             </div>
           </div>
         </header>

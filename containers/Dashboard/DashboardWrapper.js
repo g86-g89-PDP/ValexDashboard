@@ -96,13 +96,6 @@ const DashboardWrapper = styled.div`
         border-radius: 100%;
         text-align: center;
       }
-
-      ${
-        "" /* .MuiOutlinedInput-input {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-        border-radius: 20px !important;
-      } */
       }
 
       input {

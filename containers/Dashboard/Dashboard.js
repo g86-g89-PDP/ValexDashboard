@@ -42,7 +42,7 @@ const menus = [
     icon: faShopify,
   },
   { id: "card", to: "/card", title: "Card", icon: faCreditCard },
-  { id: "mail", to: "/mail", title: "Mail", icon: faMailBulk },
+  { id: "mail", to: "/mail/mail", title: "Mail", icon: faMailBulk },
   {
     id: "basicTables",
     to: "/basicTables",
@@ -151,9 +151,7 @@ const Dashboard = ({ children, menu }) => {
             </div>
           </div>
         </header>
-        <div className="content ">
-          {children}
-        </div>
+        <div className="content ">{children}</div>
       </div>
     </DashboardWrapper>
   );

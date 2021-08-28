@@ -14,40 +14,32 @@ const DashboardWrapper = styled.div`
     top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    transition: 0.5s;
+    transition: 0.4s;
     &:hover {
-      width: 300px;
+      width: 250px;
       padding: 20px;
     }
     &.show {
-      width: 300px;
+      width: 220px;
       padding: 20px;
     }
-    h2 {
-      color: #00049d !important;
-      position: absolute;
-      top: 60px;
-      left: 100px;
-    }
-    .toggle {
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      border-radius: 100%;
-      text-align: center;
-      transition: 0.3s;
-      color: #111;
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      position: absolute;
-      top: 30px;
-      left: 250px;
 
-      &:hover {
-        background: rgba(187, 187, 187, 0.4);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-      }
+    .title {
+      position: absolute;
+      top: 156px;
+      left: 76px;
     }
+
+    span {
+      font-size: 13px;
+    }
+
+    .imgLogo {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+    }
+
     nav {
       li {
         a {
@@ -55,34 +47,41 @@ const DashboardWrapper = styled.div`
             display: block !important;
             padding: 10px 20px !important;
             border-radius: 6px !important;
-            background-color: rgba(255, 255, 255, 0.3) !important;
-            color: #3f3f3f !important;
+            color: #d9dfe6 !important;
             margin-bottom: 10px !important;
             transition: 0.3s !important;
             min-width: 200px !important;
             overflow: hidden !important;
-            &:hover {
-              background-color: rgba(255, 255, 255, 0.5) !important;
-            }
           }
           &.active {
             .MuiButtonBase-root {
-              background-color: rgba(7, 0, 255, 0.3) !important;
-              backdrop-filter: blur(1.5px);
-              -webkit-backdrop-filter: blur(1.5px);
-              border: 1px solid rgba(255, 255, 255, 0.18);
-              color: #111 !important;
+              color: #2a7ef3 !important;
             }
           }
         }
       }
     }
+
+    .div {
+      width: 72px;
+      height: 72px;
+      border-radius: 100%;
+      border: 2px solid #0caadf !important;
+      .user {
+        width: 67px;
+        height: 67px;
+        border-radius: 100%;
+        border: 3px solid #1f2940 !important;
+      }
+    }
   }
   .rightside {
-    background: #ffffff;
+    background-color: #141b2d !important;
     flex: 1;
     position: relative;
     header {
+      position: sticky;
+      background: #1f2940 !important;
       padding: 10px;
       position: sticky;
       top: 0;
@@ -91,10 +90,42 @@ const DashboardWrapper = styled.div`
       -webkit-backdrop-filter: blur(4px);
       border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 1000;
-    }
 
-    .content {
-      padding: 20px;
+      .toggle {
+        cursor: pointer;
+        border-radius: 100%;
+        text-align: center;
+      }
+
+      ${
+        "" /* .MuiOutlinedInput-input {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        border-radius: 20px !important;
+      } */
+      }
+
+      input {
+        width: 290px;
+        border-color: #ffffff1a !important;
+        border: 1px solid #e2e8f51a !important;
+        background-color: #ffffff1a !important;
+        border-radius: 30px;
+       /* border-outline: 0; */
+        border: none;
+        box-shadow: none;
+      }
+
+      .img-user {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .icons {
+        cursor: pointer;
+      }
     }
   }
 `;

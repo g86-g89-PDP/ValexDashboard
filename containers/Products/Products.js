@@ -6,6 +6,9 @@ import {
   Select,
 } from "@material-ui/core";
 import React from "react";
+import { AiFillStar } from "react-icons/ai";
+import { BiAlignJustify } from "react-icons/bi";
+import { RiRestartLine } from "react-icons/ri";
 import ProductsWrapper from "./ProductsWrapper";
 
 const Products = () => {
@@ -17,13 +20,28 @@ const Products = () => {
             <p className="text">Ecommerce</p>
             <p className="smiletext"> / Products</p>
           </div>
-          <div></div>
+          <div>
+            <div>
+              <button className="btn humburger">
+                <BiAlignJustify />
+              </button>
+              <button className="btn star">
+                <AiFillStar />
+              </button>
+              <button className="btn restart">
+                <RiRestartLine />
+              </button>
+            </div>
+          </div>
         </div>
         <div className="row">
           <div className="col-md-3">
             <div>
               <FormControl className="formControl">
-                <InputLabel htmlFor="grouped-native-select">
+                <InputLabel
+                  className="text-white"
+                  htmlFor="grouped-native-select"
+                >
                   Grouping
                 </InputLabel>
                 <Select native defaultValue="" id="grouped-native-select">
@@ -35,7 +53,9 @@ const Products = () => {
                 </Select>
               </FormControl>
               <FormControl className="formControl">
-                <InputLabel htmlFor="grouped-select">Grouping</InputLabel>
+                <InputLabel className="text-white" htmlFor="grouped-select">
+                  Grouping
+                </InputLabel>
                 <Select defaultValue="" id="grouped-select">
                   <MenuItem value={1}>Option 1</MenuItem>
                   <MenuItem value={2}>Option 2</MenuItem>

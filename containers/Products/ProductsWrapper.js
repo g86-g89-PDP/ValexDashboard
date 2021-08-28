@@ -6,11 +6,26 @@ const ProductsWrapper = styled.div`
     width: 100%;
     color: white;
   }
+
+  .formControl {
+    width: 100%;
+    color: white;
+  }
   .texts {
     align-items: flex-end;
   }
   .text {
     font-size: 30px;
+  }
+
+  .humburger {
+    background-color: #00b9ff;
+  }
+  .star {
+    background-color: #ee335e;
+  }
+  .restart {
+    background-color: #fbbc0b;
   }
 
   .smiletext {

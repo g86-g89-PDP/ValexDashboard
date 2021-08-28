@@ -20,7 +20,7 @@ const DashboardWrapper = styled.div`
       padding: 20px;
     }
     &.show {
-      width: 250px;
+      width: 220px;
       padding: 20px;
     }
 
@@ -104,7 +104,7 @@ const DashboardWrapper = styled.div`
         border: 1px solid #e2e8f51a !important;
         background-color: #ffffff1a !important;
         border-radius: 30px;
-        border-outside: none;
+       /* border-outline: 0; */
         border: none;
         box-shadow: none;
       }

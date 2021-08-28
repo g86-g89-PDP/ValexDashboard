@@ -151,7 +151,9 @@ const Dashboard = ({ children, menu }) => {
             </div>
           </div>
         </header>
-        <div className="content">{children}</div>
+        <div className="content ">
+          {children}
+        </div>
       </div>
     </DashboardWrapper>
   );

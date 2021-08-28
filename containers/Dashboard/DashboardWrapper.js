@@ -113,7 +113,7 @@ const DashboardWrapper = styled.div`
         border-radius: 100%;
         width: 40px;
         height: 40px;
-        margin-right: 15px;
+        margin-right: 8px;
       }
 
       .icons {

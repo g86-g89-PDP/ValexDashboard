@@ -14,3 +14,33 @@ a {
 * {
   box-sizing: border-box;
 }
+.width{
+  width: 100%;
+  background:rgb(50, 44, 62);
+}
+.button1{
+  margin-right:8px !important;
+}
+.container{
+  background-color: #1F2940 !important;
+   color: aliceblue;
+}
+.card2{
+    background-color: #1F2940 !important;
+    color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.fieldset{
+  margin-left: 60px !important;
+}
+.body{
+  background-color: #141B2D;
+}
+.bgg{
+  background-color: #141B2D !important;
+}
+.card{
+    background-color: #1F2940 !important;
+    color: aliceblue;
+}

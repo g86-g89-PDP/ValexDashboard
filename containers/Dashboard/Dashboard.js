@@ -10,14 +10,8 @@ import {
   faTable,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  Badge,
-  Link,
-  List,
-  ListItem,
-  makeStyles,
-  TextField,
-} from "@material-ui/core";
+import { Badge, List, ListItem } from "@material-ui/core";
+import Link from "next/link";
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { useDispatch, useSelector } from "react-redux";
@@ -143,7 +137,9 @@ const Dashboard = ({ children, menu }) => {
                 className="img-user"
                 alt=""
               />
-              <Panel />
+              <div>
+                <Panel />
+              </div>
             </div>
           </div>
         </header>

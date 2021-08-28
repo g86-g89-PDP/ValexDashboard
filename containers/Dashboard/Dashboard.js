@@ -82,7 +82,7 @@ const Dashboard = ({ children, menu }) => {
                 <Link href={`${v.to}`}>
                   <a className={`${menu === v.id ? "active" : ""}`}>
                     <ListItem button>
-                      <FontAwesomeIcon icon={v.icon} className="me-3" />
+                      <FontAwesomeIcon icon={v.icon} className="me-4" />
                       {v.title}
                     </ListItem>
                   </a>

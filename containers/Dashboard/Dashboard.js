@@ -66,7 +66,7 @@ const Dashboard = ({ children, menu }) => {
           <div className="div text-center">
             <img
               src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg"
-              alt=""
+              alt="avatar"
               className="mb-2 user"
             />
           </div>

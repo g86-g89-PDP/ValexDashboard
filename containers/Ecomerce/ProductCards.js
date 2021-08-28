@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
+
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAccessibleIcon, faSafari } from "@fortawesome/free-brands-svg-icons";

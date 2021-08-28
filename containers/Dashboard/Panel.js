@@ -10,6 +10,8 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const useStyles = makeStyles({
   list: {
@@ -72,9 +74,12 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      {["right"].map((anchor) => (
+      {["|"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)}>
+            {anchor}
+            <FontAwesomeIcon className="text-white me-4 icons" icon={faBars} />
+          </Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

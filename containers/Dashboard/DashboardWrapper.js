@@ -27,7 +27,7 @@ const DashboardWrapper = styled.div`
     .title {
       position: absolute;
       top: 156px;
-      left: 76px;
+      left: 65px;
     }
 
     span {
@@ -113,7 +113,7 @@ const DashboardWrapper = styled.div`
         border-radius: 100%;
         width: 40px;
         height: 40px;
-        margin-right: 15px;
+        margin-right: 8px;
       }
 
       .icons {

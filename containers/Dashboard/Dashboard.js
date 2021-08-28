@@ -26,6 +26,7 @@ import DashboardWrapper from "./DashboardWrapper";
 import { FiMaximize } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
 import Panel from "./Panel";
+import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 const menus = [
   { id: "index", to: "/", title: "Index", icon: faHome },
@@ -123,7 +124,7 @@ const Dashboard = ({ children, menu }) => {
                 />
               </button>
             </div>
-            <div>
+            <div className="d-flex justify-content-center align-items-center">
               <Badge badgeContent={4} color="secondary" className="me-4">
                 <FontAwesomeIcon
                   color="white"
@@ -131,21 +132,16 @@ const Dashboard = ({ children, menu }) => {
                   icon={faEnvelope}
                 />
               </Badge>
-              <Badge className="me-3">
-                <FiMaximize className="text-white icons" />
-              </Badge>
               <Badge badgeContent={1} color="error" className="me-3">
+                <FontAwesomeIcon icon={faBell} className="text-white icons" />
+              </Badge>
+              <Badge className="me-3">
                 <FiMaximize className="text-white icons" />
               </Badge>
               <img
                 src="https://angular.spruko.com/valex/LTR/Leftmenu-Icon-Dark-Sidebar/assets/img/faces/6.jpg"
                 className="img-user"
                 alt=""
-              />
-
-              <FontAwesomeIcon
-                className="text-white me-4 icons"
-                icon={faBars}
               />
               <Panel />
             </div>

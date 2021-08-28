@@ -3,6 +3,8 @@ import Head from "next/head";
 import { Provider } from "react-redux";
 import store from "../redux/store";
 import GlobalStyle from "../styles/globalStyle";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>

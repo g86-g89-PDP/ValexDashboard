@@ -5,7 +5,7 @@ const DashboardWrapper = styled.div`
   .sidebar {
     border-right: 2px solid #333c51 !important;
     flex-shrink: 0;
-    width: 50px;
+    width: 58px;
     overflow: hidden;
     background: #1f2940 !important;
     transition: 0.3s;
@@ -37,7 +37,7 @@ const DashboardWrapper = styled.div`
     .imgLogo {
       position: absolute;
       top: 10px;
-      left: 50px;
+      left: 54px;
     }
 
     nav {

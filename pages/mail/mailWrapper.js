@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const MailWrapper = styled.div`
     overflow-x: hidden;
+    input {
+        width: 18px !important;
+        height: 18px;
+        border-radius: 5px !important;
+    }
     img{
         border-radius: 50%;
         padding: 6px;

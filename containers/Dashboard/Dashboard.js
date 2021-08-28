@@ -26,7 +26,7 @@ const menus = [
   { id: "index", to: "/", title: "Index", icon: faHome },
   {
     id: "products",
-    to: "/products",
+    to: "/ecommerce/products",
     title: "Products",
     icon: faShoppingBasket,
   },

@@ -116,6 +116,10 @@ const DashboardWrapper = styled.div`
         margin-right: 8px;
       }
 
+      .content{
+        padding: 20px;
+      }
+
       .icons {
         cursor: pointer;
       }

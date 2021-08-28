@@ -11,7 +11,7 @@ import { RiSpamLine } from "react-icons/ri";
 import { BsTrash } from "react-icons/bs";
 import { GoFileSubmodule } from "react-icons/go";
 import { AiOutlineTag } from "react-icons/ai";
-import data from "./dataMail";
+import data from "../../containers/Mail/dataMail";
 import Dashboard from "../../containers/Dashboard/Dashboard";
 
 const Mail = () => {

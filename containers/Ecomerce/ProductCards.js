@@ -11,7 +11,7 @@ const ProductCards = () => {
   return (
     <div className="container mt-4 ">
       <div class="row  bgg text-dark row-cols-1 row-cols-md-3 g-4">
-        <div class="col ">
+        <div class="col">
           <div class="card p-4 h-100">
             <img src="/img/01.jpg" alt="loading..." />
             <div class="d-flex">

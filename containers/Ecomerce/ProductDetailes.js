@@ -52,89 +52,13 @@ const ProductDetailes = () => {
             <div className="d-flex flex-wrap radioCheck mb-3">
               <h6 className="w-100">SIZES:</h6>
 
-              <div class="form-check form-check-inline fieldset">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio1"
-                  value="option1"
-                ></input>
-                <label class="form-check-label" for="inlineRadio1">
-                  S
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="option2"
-                ></input>
-                <label class="form-check-label" for="inlineRadio2">
-                  M
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="option2"
-                ></input>
-                <label class="form-check-label" for="inlineRadio2">
-                  X
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="option2"
-                ></input>
-                <label class="form-check-label" for="inlineRadio2">
-                  XL
-                </label>
-              </div>
+      
+              
+
             </div>
             <div className="d-flex flex-wrap  mb-3">
               <h6>COLORS:</h6>
-              <div class="form-check fieldset">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckIndeterminate"
-                ></input>
-              </div>
-              <div class="form-check fieldset">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckIndeterminate"
-                ></input>
-              </div>
-              <div class="form-check fieldset">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckIndeterminate"
-                ></input>
-              </div>
-              <div class="form-check fieldset">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckIndeterminate"
-                ></input>
-              </div>
+             
             </div>
             <div className="d-flex flex-wrap">
               <h6 className="w-100">QUANTITY:</h6>

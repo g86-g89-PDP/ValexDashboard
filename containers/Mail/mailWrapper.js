@@ -23,11 +23,12 @@ export const MailWrapper = styled.div`
 
     .list{
         background-color: #1F2940;
-        height: 100vh;
+        height: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
         border-radius: 10px;
+        padding-bottom: 20px;
         
         .listText{
             color: #737886;
@@ -41,6 +42,9 @@ export const MailWrapper = styled.div`
     .Mail{
         display: flex !important;
         align-items: center;
+        h2{
+            color: #ffffff;
+        }
     }
     .btn{
         margin-left: 8px;

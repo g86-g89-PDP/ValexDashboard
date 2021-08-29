@@ -11,6 +11,12 @@ import { RiSpamLine } from "react-icons/ri";
 import { BsTrash } from "react-icons/bs";
 import { GoFileSubmodule } from "react-icons/go";
 import { AiOutlineTag } from "react-icons/ai";
+import { GoFileSymlinkDirectory } from "react-icons/go"
+import { GoFileDirectory } from "react-icons/go"
+import { AiFillFileAdd } from "react-icons/ai"
+import { IoLogoTwitter } from "react-icons/io"
+import { FaGithub } from "react-icons/fa"
+import { FcGoogle } from "react-icons/fc"
 import data from "./dataMail";
 
 
@@ -85,6 +91,58 @@ const Mail = () => {
                   </div>
                 );
               })}
+              <div>
+                <div>
+                  <p className="text-light mt-3 mb-0">Label</p>
+                  <div className="mapp">
+                    <div className="d-flex">
+                      <span className="listText"><GoFileSymlinkDirectory/></span>
+                      <p className="listText">Social</p>
+                    </div>
+                    <p className="listText">10</p>
+                  </div>
+                  <div className="mapp">
+                    <div className="d-flex">
+                      <span className="listText"><GoFileDirectory/></span>
+                      <p className="listText">Promotions</p>
+                    </div>
+                    <p className="listText">22</p>
+                  </div>
+                  <div className="mapp">
+                    <div className="d-flex">
+                      <span className="listText"><AiFillFileAdd/></span>
+                      <p className="listText">Updates</p>
+                    </div>
+                    <p className="listText">17</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p className="text-light mt-3 mb-0">Tabs</p>
+                  <div className="mapp">
+                    <div className="d-flex">
+                      <span className="listText"><IoLogoTwitter/></span>
+                      <p className="listText">Twitter</p>
+                    </div>
+                    <p className="listText">2</p>
+                  </div>
+                  <div className="mapp">
+                    <div className="d-flex">
+                      <span className="listText"><FaGithub/></span>
+                      <p className="listText">Github</p>
+                    </div>
+                    <p className="listText">32</p>
+                  </div>
+                  <div className="mapp">
+                    <div className="d-flex">
+                      <span className="listText"><FcGoogle/></span>
+                      <p className="listText">Google</p>
+                    </div>
+                    <p className="listText">7</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-lg-9 col-md-9 ">
@@ -192,15 +250,15 @@ const Mail = () => {
                   </div>
                   <div>
                     <div className="Adrean">
-                      <span>Adrean Monino</span>
+                      <span>Albert Ansing</span>
                       <div className="d-flex">
                         <span>11:30am</span>
                       </div>
                     </div>
                     <div>
                       <span className="semeone">
-                        Someone who believes in
-                        <br /> you
+                        Here's What You Missed This 
+                        <br />  Week
                       </span>
                     </div>
                     <div>
@@ -228,6 +286,51 @@ const Mail = () => {
                     <div className="userImg">
                       <img
                         src="https://i.pinimg.com/originals/ff/d9/b1/ffd9b14d983e73016d2de5cf497dc2ba.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="Adrean">
+                      <span>Carla Gudeng</span>
+                      <div className="d-flex">
+                        <span>
+                          <AiOutlinePaperClip />{" "}
+                        </span>
+                        <span>11:30am</span>
+                      </div>
+                    </div>
+                    <div>
+                      <span className="semeone">
+                        4 Ways to Optimize Your 
+                        <br /> Search
+                      </span>
+                    </div>
+                    <div>
+                      <p>
+                        enean commodo li gula eget dolor cum socia eget dolor
+                        enean commodo li gula eget dolor cum socia eget dcum
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="olcham">
+                <div className="d-flex">
+                  <div className="mishka">
+                    <div>
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />{" "}
+                      <AiFillStar className="color" />
+                    </div>
+                    <div className="userImg">
+                      <img
+                        src="https://yt3.ggpht.com/a/AATXAJzrhm0yrH5yUI4voXY_Ovg05UYf9e5_aAEyIA=s900-c-k-c0xffffffff-no-rj-mo"
                         alt=""
                       />
                     </div>
